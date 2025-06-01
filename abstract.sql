@@ -13,7 +13,7 @@ SELECT
     COMPANY,
     ACTIVEFLAG
 FROM
-    M_EMPLOYEE;
+    M_CORRESPONDENT;
 
 
 -- # Attribute ส่วน Header ที่สำคัญ
