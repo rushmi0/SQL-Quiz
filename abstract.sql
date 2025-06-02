@@ -9,6 +9,7 @@ GO
 SELECT
     CODE,
     NAME,
+    CHANGEDATETIME,
     LANG,
     COMPANY,
     ACTIVEFLAG

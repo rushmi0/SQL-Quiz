@@ -20,5 +20,5 @@ BEGIN
 END
 
 
-EXEC sp_goods_name_edit @Name = N'N/A', @Code = N'C'
+EXEC sp_goods_name_edit @Name = N'Android 14', @Code = N'C'
 

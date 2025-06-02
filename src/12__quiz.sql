@@ -7,5 +7,15 @@ GO
 -- ============================================
 
 
+ALTER TRIGGER product_name_edite
+    ON [M_GOODS]
+    AFTER UPDATE
+    AS
+    BEGIN
 
-
+        UPDATE M_GOODS
+        SET CHANGEDATETIME = GETDATE()
+        FROM M_GOODS g
+                 INNER JOIN inserted i ON g.CODE = i.CODE
+                 INNER JOIN deleted d ON i.CODE = d.CODE
+    END
